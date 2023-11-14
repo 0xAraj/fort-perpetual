@@ -15,7 +15,6 @@ library FORTStructs {
         address user; // address of the trader
         uint256 collateral; // collateral deposited by trader
         uint256 size; // open size of the trader
-        uint256 leverage; // leverage of the trader
         STRATEGY strategy; // strategy selected by user like LONG OR SHORT
     }
 
