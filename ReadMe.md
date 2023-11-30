@@ -9,4 +9,5 @@
 
 1. This contract is responsible for handling all functions related to traders
 2. createPosition takes arguments, checks it, create position
-3.
+
+Vault should always have 80% of deposit

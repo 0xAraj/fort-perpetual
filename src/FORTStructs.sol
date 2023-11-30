@@ -15,6 +15,7 @@ library FORTStructs {
         address user; // address of the trader
         uint256 collateral; // collateral deposited by trader
         uint256 size; // open size of the trader
+        uint256 sizeInToken; // amount of token from size of position
         STRATEGY strategy; // strategy selected by user like LONG OR SHORT
     }
 
@@ -24,8 +25,10 @@ library FORTStructs {
     struct Protocol {
         address asset; // asset address protocol is taking as collateral ie USDC
         uint256 MAX_LEVERAGE; // max leverage, a trader is allowed to take
-        uint256 openInterest; // open position of whole protocol including LONG and SHORT in USD;
-        uint256 openInterestInToken; // open position of whole protocol including LONG and SHORT in index token ie BTC
+        uint256 openInterestLong; // open position of whole protocol in  LONG
+        uint256 openInterestShort; // open position of whole protocol in  SHORT
+        uint256 openInterestLongInToken; // open position of whole protocol of LONG in BTC
+        uint256 openInterestShortInToken; // open position of whole protocol of SHORT in BTC
     }
 
     /**
